@@ -1,0 +1,20 @@
+{
+  "extends": "vtex-react/io",
+  "rules": {
+    "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/prefer-nullish-coalescing": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "no-restricted-syntax": "off",
+    "func-names": "off",
+    "@typescript-eslint/explicit-member-accessibility": "off"
+  },
+  "overrides": [
+    {
+      // enable the rule specifically for TypeScript files
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "@typescript-eslint/explicit-member-accessibility": ["error"]
+      }
+    }
+  ]
+}
